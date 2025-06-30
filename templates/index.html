@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <head><title>Sentiment Predictor</title></head>
+  <body>
+    <h2>Enter Text for Sentiment Prediction</h2>
+    <form method="POST">
+      <input type="text" name="text" style="width:300px">
+      <input type="submit" value="Predict">
+    </form>
+    {% if prediction %}
+      <p><strong>Prediction:</strong> {{ prediction }}</p>
+      <p><strong>Score:</strong> {{ score }}</p>
+    {% endif %}
+  </body>
+</html>
